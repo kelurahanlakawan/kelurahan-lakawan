@@ -1,0 +1,311 @@
+
+/* ===== HALAMAN PENURUNAN DESIL ===== */
+
+.desil-page {
+  padding: 45px 7.3% 65px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.desil-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 5%;
+  background-color: #fffdfd;
+  border: 1px solid #dedede;
+  border-radius: 28px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== KONTEN UTAMA ===== */
+
+.desil-main {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 55px;
+  align-items: start;
+}
+
+/* ===== GAMBAR ===== */
+
+
+/* ===== GAMBAR ===== */
+
+.desil-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.desil-image-wrapper {
+  width: 100%;
+  height: 515px;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.desil-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.desil-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  margin-bottom: 34px;
+  background-color: #d9d9d9;
+  color: #555;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.desil-back:hover {
+  background-color: #c5c5c5;
+}
+
+/* ===== INFORMASI DESIL ===== */
+
+.desil-content h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #080808;
+  margin: 20px 0 30px;
+}
+
+.desil-title-line {
+  width: 85px;
+  height: 5px;
+  background-color: #42316d;
+  border-radius: 10px;
+  margin-bottom: 34px;
+}
+
+.desil-requirements {
+  border: 1px solid #dedede;
+  border-radius: 18px;
+  padding: 18px 20px;
+  min-height: 368px;
+  color: #292929;
+}
+
+.desil-requirements h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #111;
+}
+
+.desil-requirements ol {
+  padding-left: 22px;
+  margin: 0 0 18px;
+}
+
+.desil-requirements li {
+  font-size: 14px;
+  line-height: 1.55;
+  padding-left: 1px;
+}
+
+.desil-estimation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #dedede;
+  border-radius: 18px;
+  padding: 17px 32px;
+  margin-top: 24px;
+  min-height: 63px;
+}
+
+.desil-estimation strong {
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.desil-estimation span {
+  font-size: 17px;
+}
+
+/* ===== JADWAL DAN KONTAK ===== */
+
+.desil-service {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  border: 1px solid #dedede;
+  border-radius: 18px;
+  padding: 22px 28px;
+  margin-top: 35px;
+  min-height: 250px;
+}
+
+.desil-schedule h2 {
+  font-size: 20px;
+  font-weight: 750;
+  margin: 0 0 16px;
+}
+
+/* Timeline jadwal */
+
+.schedule-timeline {
+  position: relative;
+  padding-left: 14px;
+  margin-left: 5px;
+}
+
+.schedule-timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  bottom: 8px;
+  width: 1.5px;
+  background-color: #333;
+}
+
+.schedule-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.schedule-dot {
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #42316d;
+  z-index: 1;
+}
+
+.schedule-item h4 {
+  font-size: 16px;
+  font-weight: 750;
+  margin: 0 0 3px;
+}
+
+.schedule-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Kontak */
+
+.desil-contact {
+  border-left: 1px dashed #b9ad9d;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.desil-contact h2 {
+  font-size: 18px;
+  font-weight: 750;
+  margin: 0 0 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .desil-page {
+    padding: 30px 4%;
+  }
+
+  .desil-main {
+    gap: 30px;
+  }
+
+  .desil-service {
+    gap: 20px;
+  }
+
+  .desil-contact {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .desil-container {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .desil-main {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+
+  .desil-image-wrapper {
+    width: 100%;
+    height: 350px;
+  }
+
+  .desil-back {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .desil-content h1 {
+    font-size: 26px;
+    margin-top: 5px;
+  }
+
+  .desil-requirements {
+    min-height: auto;
+  }
+
+  .desil-estimation {
+    padding: 16px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .desil-estimation strong {
+    font-size: 17px;
+  }
+
+  .desil-service {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .desil-contact {
+    border-left: none;
+    border-top: 1px dashed #b9ad9d;
+    padding: 22px 0 0;
+  }
+
+  .desil-contact h2 {
+    font-size: 17px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,285 @@
+
+/* ==============================
+   HALAMAN PROFIL
+============================== */
+
+.profil-page {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==============================
+   HEADER DAN VISI MISI
+============================== */
+
+.profil-hero {
+  width: 100%;
+  background-color: #d9d6e0;
+  padding: 25px 7.3% 45px;
+  box-sizing: border-box;
+}
+
+.profil-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #080808;
+  margin: 25px 0 30px;
+}
+
+.profil-identity {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 90px;
+  margin: 0 auto 40px;
+  padding: 12px 35px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.profil-identity img {
+  width: 58px;
+  height: 65px;
+  object-fit: contain;
+
+  /* Memperbesar logo tanpa mengubah posisi tulisan */
+  transform: scale(1.7);
+  transform-origin: center;
+}
+
+.profil-identity h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 3px;
+  color: #080808;
+}
+
+.profil-identity p {
+  font-size: 13px;
+  margin: 0;
+  color: #080808;
+}
+
+/* CARD VISI MISI */
+
+.visi-misi-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px 35px;
+  box-sizing: border-box;
+  color: #080808;
+}
+
+.visi-section {
+  text-align: center;
+}
+
+.visi-section h2,
+.misi-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 17px;
+}
+
+.visi-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.misi-section {
+  margin-top: 25px;
+}
+
+.misi-section h2 {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.misi-section ol {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==============================
+   STRUKTUR ORGANISASI
+============================== */
+
+.struktur-section {
+  padding: 30px 6% 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.struktur-section h2,
+.sejarah-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #080808;
+  margin: 0 0 30px;
+}
+
+.struktur-image {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.struktur-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* ==============================
+   SEJARAH KELURAHAN
+============================== */
+
+.sejarah-section {
+  padding: 50px 7.3% 70px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sejarah-section h2 {
+  margin-bottom: 30px;
+}
+
+.sejarah-card {
+  width: 100%;
+  background-color: #d9d6e0;
+  border-radius: 16px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+
+.sejarah-card p {
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #40366f;
+  text-align: center;
+  margin: 0;
+}
+
+/* ==============================
+   RESPONSIVE TABLET
+============================== */
+
+@media (max-width: 900px) {
+  .profil-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .struktur-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .sejarah-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .struktur-section h2,
+  .sejarah-section h2 {
+    font-size: 24px;
+  }
+}
+
+/* ==============================
+   RESPONSIVE MOBILE
+============================== */
+
+@media (max-width: 600px) {
+  .profil-hero {
+    padding: 20px 5% 35px;
+  }
+
+  .profil-title {
+    font-size: 40px;
+    margin: 20px 0 25px;
+  }
+
+  .profil-identity {
+    padding: 12px 20px;
+    gap: 8px;
+    margin-bottom: 25px;
+  }
+
+  .profil-identity img {
+    width: 45px;
+    height: 52px;
+  }
+
+  .profil-identity h2 {
+    font-size: 16px;
+  }
+
+  .profil-identity p {
+    font-size: 10px;
+  }
+
+  .visi-misi-card {
+    padding: 25px 18px;
+  }
+
+  .visi-section h2,
+  .misi-section h2 {
+    font-size: 19px;
+  }
+
+  .visi-section p {
+    font-size: 11px;
+  }
+
+  .misi-section ol {
+    font-size: 12px;
+    padding-left: 22px;
+  }
+
+  .struktur-section {
+    padding: 25px 4% 0;
+  }
+
+  .struktur-section h2,
+  .sejarah-section h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .struktur-image img {
+    border-radius: 10px;
+  }
+
+  .sejarah-section {
+    padding: 35px 5% 45px;
+  }
+
+  .sejarah-card {
+    padding: 22px 18px;
+  }
+
+  .sejarah-card p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}

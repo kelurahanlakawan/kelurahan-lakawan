@@ -1,0 +1,288 @@
+
+/* ================================
+   HALAMAN INFORMASI
+================================ */
+
+.informasi-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 35px 70px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* JUDUL HALAMAN */
+
+.informasi-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.informasi-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 42px;
+  font-weight: 700;
+  color: #171717;
+  margin: 0;
+}
+
+/* BAGIAN INFORMASI */
+
+.informasi-section {
+  margin-bottom: 44px;
+}
+
+.informasi-section > h2 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 26px;
+}
+
+/* GRID KARTU STATISTIK */
+
+.informasi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px 20px;
+  padding: 0 15px;
+}
+
+/* KARTU STATISTIK */
+
+.informasi-stat-card {
+  min-height: 150px;
+  background-color: #d9d6e1;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px 12px;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.informasi-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(57, 42, 94, 0.12);
+}
+
+/* IKON */
+
+.informasi-icon {
+  width: 34px;
+  height: 34px;
+  background-color: #978bad;
+  color: #392b63;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* TEKS KARTU */
+
+.informasi-stat-card p {
+  font-size: 11px;
+  font-weight: 400;
+  color: #29252f;
+  margin: 0 0 3px;
+}
+
+.informasi-stat-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #392b63;
+  margin: 0;
+}
+
+/* BAGIAN PEKERJAAN */
+
+.pekerjaan-section {
+  margin-top: 45px;
+}
+
+/* BAGIAN PELAYANAN */
+
+.pelayanan-section {
+  margin-top: 45px;
+}
+
+.pelayanan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 0 18px;
+}
+
+/* KARTU PELAYANAN */
+
+.pelayanan-card {
+  background-color: #fff;
+  border: 1px solid #e9e6ec;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pelayanan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* GAMBAR PELAYANAN */
+
+.pelayanan-image {
+  width: 100%;
+  height: 125px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #e9e5ef;
+}
+
+.pelayanan-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* KONTEN PELAYANAN */
+
+.pelayanan-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 12px;
+}
+
+.pelayanan-content h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #171717;
+  margin: 0 0 7px;
+}
+
+.pelayanan-content p {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+.pelayanan-detail {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #392b63;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: 20px;
+  margin-top: auto;
+  transition: background-color 0.2s ease;
+}
+
+.pelayanan-detail:hover {
+  background-color: #57458b;
+}
+
+/* ================================
+   RESPONSIVE TABLET
+================================ */
+
+@media (max-width: 768px) {
+  .informasi-page {
+    padding: 25px 20px 50px;
+  }
+
+  .informasi-grid {
+    gap: 18px 14px;
+    padding: 0;
+  }
+
+  .informasi-stat-card {
+    min-height: 135px;
+  }
+
+  .pelayanan-grid {
+    gap: 14px;
+    padding: 0;
+  }
+
+  .pelayanan-image {
+    height: 110px;
+  }
+}
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .informasi-page {
+    padding: 22px 15px 40px;
+  }
+
+  .informasi-header h1 {
+    font-size: 36px;
+  }
+
+  .informasi-section > h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  .informasi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 12px;
+  }
+
+  .informasi-stat-card {
+    min-height: 125px;
+    padding: 14px 8px;
+  }
+
+  .informasi-stat-card p {
+    font-size: 10px;
+  }
+
+  .informasi-stat-card h3 {
+    font-size: 14px;
+  }
+
+  .pekerjaan-section,
+  .pelayanan-section {
+    margin-top: 35px;
+  }
+
+  .pelayanan-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pelayanan-card {
+    padding: 12px;
+  }
+
+  .pelayanan-image {
+    height: 170px;
+  }
+
+  .pelayanan-content h3 {
+    font-size: 14px;
+  }
+}
